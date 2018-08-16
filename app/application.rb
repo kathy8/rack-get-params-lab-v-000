@@ -5,7 +5,7 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    
+
  elsif req.path.match(/search/)
    search_term = req.params["q"]
     resp.write handle_search(search_term)
