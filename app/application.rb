@@ -29,7 +29,7 @@ class Application
             return "#{search_term} is one of our items"
           else
             return "Couldn't find #{search_term}"
-          end	     
+          end
         end
 
       def handle_cart
@@ -37,8 +37,8 @@ class Application
         "Your cart is empty"
       else
         @@cart.join("\n")
-      end 
-    end 
+      end
+    end
     def handle_add(item)
  if @@items.include?(item)
    @@cart << item
@@ -48,5 +48,5 @@ class Application
  end
  # binding.pry
  end
- end 
+ end
  
